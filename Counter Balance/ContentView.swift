@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var count = 0
+    @State private var count = UserDefaults.standard.integer(forKey: "CountTapped")
     
     var body: some View {
         NavigationView {
@@ -23,6 +23,7 @@ struct ContentView: View {
                     
                     Button(action: {
                         self.count += 1
+                        UserDefaults.standard.set(self.count, forKey: "CountTapped")
                     }) {
                         Image(systemName: "plus.circle")
                             .font(Font.system(size: 80.0))
@@ -34,6 +35,7 @@ struct ContentView: View {
                     Button(action: {
                         if count > 0 {
                             self.count -= 1
+                            UserDefaults.standard.set(self.count, forKey: "CountTapped")
                         }
                     }) {
                         Image(systemName: "minus.circle")
