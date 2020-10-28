@@ -14,20 +14,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color.white, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
+                LinearGradient(gradient: Gradient(colors: [Color.black, Color.blue]), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
+                
                 VStack {
-                    
-                   
                     
                     Spacer()
                     
                     Button(action: {
                         self.count += 1
                         UserDefaults.standard.set(self.count, forKey: "CountTapped")
+                        playHapticBump()
+
                     }) {
                         Image(systemName: "plus.circle")
                             .font(Font.system(size: 80.0))
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                     }
                     
                     Spacer()
@@ -36,11 +37,14 @@ struct ContentView: View {
                         if count > 0 {
                             self.count -= 1
                             UserDefaults.standard.set(self.count, forKey: "CountTapped")
+
                         }
+                        playHapticBump()
+
                     }) {
                         Image(systemName: "minus.circle")
                             .font(Font.system(size: 80.0))
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
 
                     }
                     
@@ -53,6 +57,18 @@ struct ContentView: View {
         }
         
     }
+    
+    func playHapticBump() {
+        if self.count == 0 {
+            UINotificationFeedbackGenerator().notificationOccurred(.error)
+        } else {
+            UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+
+            
+        }
+        
+    }
+    
     
     
     
