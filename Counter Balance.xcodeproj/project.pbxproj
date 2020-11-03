@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74661AF42547D16E001B868A /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74661AF32547D16E001B868A /* Counter.swift */; };
+		7401A220255216B200DAD881 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401A21F255216B200DAD881 /* Counter.swift */; };
 		748CBB53253FDA16003F265F /* Counter_BalanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CBB52253FDA16003F265F /* Counter_BalanceApp.swift */; };
 		748CBB55253FDA16003F265F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748CBB54253FDA16003F265F /* ContentView.swift */; };
 		748CBB57253FDA18003F265F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748CBB56253FDA18003F265F /* Assets.xcassets */; };
@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		74661AF32547D16E001B868A /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		7401A21F255216B200DAD881 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		748CBB4F253FDA16003F265F /* Counter Balance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Counter Balance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		748CBB52253FDA16003F265F /* Counter_BalanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter_BalanceApp.swift; sourceTree = "<group>"; };
 		748CBB54253FDA16003F265F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 				748CBB54253FDA16003F265F /* ContentView.swift */,
 				748CBB56253FDA18003F265F /* Assets.xcassets */,
 				748CBB5B253FDA18003F265F /* Info.plist */,
+				7401A21F255216B200DAD881 /* Counter.swift */,
 				748CBB58253FDA18003F265F /* Preview Content */,
-				74661AF32547D16E001B868A /* Counter.swift */,
 			);
 			path = "Counter Balance";
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			files = (
 				748CBB55253FDA16003F265F /* ContentView.swift in Sources */,
 				748CBB53253FDA16003F265F /* Counter_BalanceApp.swift in Sources */,
-				74661AF42547D16E001B868A /* Counter.swift in Sources */,
+				7401A220255216B200DAD881 /* Counter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
